@@ -47,3 +47,20 @@ Use the following command to enter the running container:
 ```
 docker exec -it my-nginx bash
 ```
+
+Once inside the container, navigate to the /usr/share/nginx/html directory:
+```
+cd /usr/share/nginx/html
+```
+
+### Step 6: Load the HTML File into the Container
+
+Exit the container by typing exit or pressing Ctrl + D, and copy your HTML file into the container's /usr/share/nginx/html directory from your host machine:
+
+```
+docker cp index.html my-nginx:/usr/share/nginx/html/index.html
+```
+
+### Step 7: Verify the HTML File Deployment
+
+Open your web browser and navigate to http://localhost again. You should now see the content of your index.html file.
