@@ -9,7 +9,7 @@ This guide will help you deploy an HTML file in an Nginx container using Docker.
 Open your terminal and pull the Nginx image from Docker Hub:
 ```sh
 docker pull nginx
-
+```
 ### Step 2: Create HTML File
 
 Create a simple HTML file. For example, you can create a file named `index.html` with the following content:
@@ -25,3 +25,4 @@ Create a simple HTML file. For example, you can create a file named `index.html`
     <h1>Hello from Nginx!</h1>
 </body>
 </html>
+```
